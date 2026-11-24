@@ -1,0 +1,26 @@
+Return-Path: <bounce@mailer-k3.example>
+Delivered-To: sara@club-ruwad.example
+Received: from mailer-k3.example (mailer-k3.example [203.0.113.25])
+        by mx.club-ruwad.example with ESMTPS id 8f21a
+        for <sara@club-ruwad.example>; Wed, 18 Mar 2026 09:12:03 +0300
+Authentication-Results: mx.club-ruwad.example;
+        spf=pass smtp.mailfrom=mailer-k3.example;
+        dkim=none;
+        dmarc=none header.from=ufuq-unl.example
+From: "Student Affairs | Ufuq University" <studentaffairs@ufuq-unl.example>
+Reply-To: studentaffairs.ufuq@mail-box.example
+To: sara@club-ruwad.example
+Subject: Urgent: Update Your Student Stipend Details Within 24 Hours
+Date: Wed, 18 Mar 2026 09:11:47 +0300
+Message-ID: <7c1e90@mailer-k3.example>
+X-Mailer: BulkSend 2.1
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html lang="en" dir="ltr"><body>
+<p>Dear Student,</p>
+<p>Please note that your <b>monthly stipend has been temporarily suspended</b> because your banking details are incomplete in our system.</p>
+<p>To avoid permanent cancellation, update your information through the portal <b>within 24 hours</b>:</p>
+<p><a href="https://ufuq-unl.example/auth/login?ref=c2FyYUBjbHViLXJ1d2FkLmV4YW1wbGU=">https://portal.ufuq-uni.example/rewards</a></p>
+<p>Regards,<br>Student Affairs Department — Ufuq University</p>
+</body></html>

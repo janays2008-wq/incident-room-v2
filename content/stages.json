@@ -1,0 +1,68 @@
+{
+  "stages": [
+    {
+      "stage": 1,
+      "title": "Email",
+      "goal": "Assess the email using evidence and extract indicators.",
+      "files": [
+        "01",
+        "02"
+      ],
+      "output": "Stage answers and an initial list of indicators.",
+      "tools": "Defang URL, From Base64, and URL Decode.",
+      "hints": [
+        "Compare the displayed name with the actual address character by character.",
+        "The displayed link text is not necessarily the actual destination.",
+        "Use From Base64 or Defang URL in CyberChef on the link value."
+      ]
+    },
+    {
+      "stage": 2,
+      "title": "Logs",
+      "goal": "Build a timeline from multiple sources and identify affected accounts.",
+      "files": [
+        "03",
+        "04",
+        "09"
+      ],
+      "output": "A timeline table and a list of affected accounts.",
+      "tools": "Any spreadsheet application that opens CSV files.",
+      "hints": [
+        "Sort events by time, not by file.",
+        "Look for an IP address appearing across multiple accounts.",
+        "GET retrieves the page; POST submits the data entered into it."
+      ]
+    },
+    {
+      "stage": 3,
+      "title": "Impact and Indicators",
+      "goal": "Determine what the attacker did, classify the impact using the CIA triad, and distinguish encoding, encryption, and hashing in practice.",
+      "files": [
+        "05",
+        "08",
+        "06",
+        "07"
+      ],
+      "output": "A CIA classification table, a comparison table, and decoded indicators.",
+      "tools": "From Base64, From Hex, XOR, and SHA2 (256-bit). Copy the kit identifier without trailing spaces or newlines, as these commonly cause hash mismatches.",
+      "hints": [
+        "Read the audit log from top to bottom.",
+        "Base64-encoded URLs often begin with characters such as aHR0.",
+        "Hexadecimal text without a key may not be meaningful; look for the key in code comments."
+      ]
+    },
+    {
+      "stage": 4,
+      "title": "Response and Report",
+      "goal": "Make ordered, justified response decisions and summarize the incident like an analyst.",
+      "files": [],
+      "output": "A one-page incident report assessed using the rubric in the evaluation section.",
+      "tools": "",
+      "hints": [
+        "What is still happening and needs to be stopped now?",
+        "Do not delete evidence before preserving it.",
+        "Name each control alongside the vulnerability it addresses."
+      ]
+    }
+  ]
+}

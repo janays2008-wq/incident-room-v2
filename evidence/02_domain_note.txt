@@ -1,0 +1,8 @@
+Note from the club IT volunteer (fictional data)
+=====================================================
+Domain registration lookup:
+
+ufuq-uni.example      Registration date: 2014-08-21   Registrant: Ufuq University (official institution)
+ufuq-unl.example      Registration date: 2026-03-14   Registrant: Hidden (privacy service)
+
+mail-box.example      Public free email provider; anyone can register an account.

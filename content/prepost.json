@@ -1,0 +1,318 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "concept": "Domain spoofing",
+      "A": {
+        "text": "You receive a message claiming to be from Al Waha Bank, sent from service@alwaha-bnak.example. The official domain is alwaha-bank.example. What is the strongest warning sign?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It includes the bank logo."
+          },
+          {
+            "id": "b",
+            "text": "The sender domain swaps letters compared with the official domain."
+          },
+          {
+            "id": "c",
+            "text": "It arrived in the morning."
+          },
+          {
+            "id": "d",
+            "text": "It uses the word urgent."
+          }
+        ]
+      },
+      "B": {
+        "text": "The official domain for Souq Alhay is souq-alhay.example. Which sender is most suspicious?",
+        "options": [
+          {
+            "id": "a",
+            "text": "orders@souq-alhay.example",
+            "ltr": true
+          },
+          {
+            "id": "b",
+            "text": "orders@souq-alhay.example.pay-check.example",
+            "ltr": true
+          },
+          {
+            "id": "c",
+            "text": "support@souq-alhay.example",
+            "ltr": true
+          },
+          {
+            "id": "d",
+            "text": "noreply@souq-alhay.example",
+            "ltr": true
+          }
+        ]
+      },
+      "points": 5
+    },
+    {
+      "id": "q2",
+      "concept": "Encoding, encryption and hashing",
+      "A": {
+        "text": "Which of the following can anyone decode without a secret key?",
+        "options": [
+          {
+            "id": "a",
+            "text": "AES-encrypted text using a secret key."
+          },
+          {
+            "id": "b",
+            "text": "Base64-encoded text."
+          },
+          {
+            "id": "c",
+            "text": "A SHA-256 hash."
+          },
+          {
+            "id": "d",
+            "text": "Public-key encrypted text without the matching private key."
+          }
+        ]
+      },
+      "B": {
+        "text": "Why do websites store password hashes?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To retrieve the original password when forgotten."
+          },
+          {
+            "id": "b",
+            "text": "Only to reduce storage size."
+          },
+          {
+            "id": "c",
+            "text": "Hashes are designed to be one-way; the website compares the submitted password hash with the stored one."
+          },
+          {
+            "id": "d",
+            "text": "A hash encrypts the password with a secret key held by the site."
+          }
+        ]
+      },
+      "points": 5
+    },
+    {
+      "id": "q3",
+      "concept": "CIA triad",
+      "A": {
+        "text": "Someone changes a student grade in a database without changing anything else. Which security principle is mainly affected?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confidentiality"
+          },
+          {
+            "id": "b",
+            "text": "Integrity"
+          },
+          {
+            "id": "c",
+            "text": "Availability"
+          },
+          {
+            "id": "d",
+            "text": "Authentication"
+          }
+        ]
+      },
+      "B": {
+        "text": "An attack takes an event-registration website offline for two hours without stealing data. Which principle is affected?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confidentiality"
+          },
+          {
+            "id": "b",
+            "text": "Integrity"
+          },
+          {
+            "id": "c",
+            "text": "Availability"
+          },
+          {
+            "id": "d",
+            "text": "Non-repudiation"
+          }
+        ]
+      },
+      "points": 5
+    },
+    {
+      "id": "q4",
+      "concept": "Threats, vulnerabilities and controls",
+      "A": {
+        "text": "An account has no multi-factor authentication. Is this a threat, vulnerability, or security control?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Threat"
+          },
+          {
+            "id": "b",
+            "text": "Vulnerability"
+          },
+          {
+            "id": "c",
+            "text": "Security control"
+          },
+          {
+            "id": "d",
+            "text": "Asset"
+          }
+        ]
+      },
+      "B": {
+        "text": "Enabling multi-factor authentication on an account is an example of what?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Threat"
+          },
+          {
+            "id": "b",
+            "text": "Vulnerability"
+          },
+          {
+            "id": "c",
+            "text": "Security control"
+          },
+          {
+            "id": "d",
+            "text": "Incident"
+          }
+        ]
+      },
+      "points": 5
+    },
+    {
+      "id": "q5",
+      "concept": "Multi-factor authentication",
+      "A": {
+        "text": "Your account password is stolen, but multi-factor authentication is enabled. What is most likely?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The password alone may not be enough to sign in."
+          },
+          {
+            "id": "b",
+            "text": "MFA automatically publishes the password."
+          },
+          {
+            "id": "c",
+            "text": "MFA guarantees no account can ever be compromised."
+          },
+          {
+            "id": "d",
+            "text": "MFA disables account recovery."
+          }
+        ]
+      },
+      "B": {
+        "text": "Two accounts have stolen passwords. One has MFA and the other does not. Which is easier to access using only the stolen password?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The account with MFA."
+          },
+          {
+            "id": "b",
+            "text": "The account without MFA."
+          },
+          {
+            "id": "c",
+            "text": "Both are always equally easy."
+          },
+          {
+            "id": "d",
+            "text": "Neither can ever be accessed."
+          }
+        ]
+      },
+      "points": 5
+    },
+    {
+      "id": "q6",
+      "concept": "Incident response",
+      "A": {
+        "text": "A colleague’s account is compromised and the attacker is still sending messages. What is the best first action?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignore the messages."
+          },
+          {
+            "id": "b",
+            "text": "Contain the account and revoke suspicious sessions."
+          },
+          {
+            "id": "c",
+            "text": "Delete all audit logs."
+          },
+          {
+            "id": "d",
+            "text": "Publish the colleague’s password."
+          }
+        ]
+      },
+      "B": {
+        "text": "Before deleting a phishing message from members’ inboxes, what is the best practice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Preserve relevant evidence and record the incident."
+          },
+          {
+            "id": "b",
+            "text": "Delete all logs immediately."
+          },
+          {
+            "id": "c",
+            "text": "Forward it to everyone."
+          },
+          {
+            "id": "d",
+            "text": "Ignore the suspicious links."
+          }
+        ]
+      },
+      "points": 5
+    }
+  ],
+  "open": {
+    "B7": {
+      "text": "The same IP address appeared in successful sign-ins to two accounts within 40 minutes from an unusual location. What do you conclude, and what action should be taken?"
+    },
+    "B8": {
+      "text": "Write the first two steps you would take if you suspected your school account had been compromised."
+    }
+  },
+  "confidence": [
+    {
+      "id": "c1",
+      "text": "I can read an email header."
+    },
+    {
+      "id": "c2",
+      "text": "I understand the difference between Base64 and hashing."
+    },
+    {
+      "id": "c3",
+      "text": "I can write an incident report."
+    }
+  ],
+  "confidenceScale": {
+    "min": 1,
+    "max": 5,
+    "minLabel": "I cannot do this",
+    "maxLabel": "I can do this confidently"
+  }
+}

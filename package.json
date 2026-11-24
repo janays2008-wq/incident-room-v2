@@ -1,1 +1,0 @@
-{"name":"incident-room-v2","version":"2.0.0","private":true,"type":"commonjs","scripts":{"build":"node -e \"const f=require('node:fs');f.rmSync('.site',{recursive:true,force:true});f.mkdirSync('.site');for(const p of ['index.html','assets','css','content','evidence','js'])f.cpSync(p,'.site/'+p,{recursive:true})\""},"engines":{"node":">=20"}}

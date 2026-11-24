@@ -1,0 +1,525 @@
+{
+  "questions": [
+    {
+      "room": 1,
+      "title": "What does SOC do?",
+      "options": [
+        "Monitor and respond to security events",
+        "Design logos"
+      ],
+      "answer": "0",
+      "explanation": "A SOC monitors and investigates security events.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What is a SIEM?",
+      "options": [
+        "A file format",
+        "A system for collecting and analyzing logs"
+      ],
+      "answer": "1",
+      "explanation": "A SIEM centralizes security logs.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What is an alert?",
+      "options": [
+        "A signal requiring review",
+        "Proof of compromise"
+      ],
+      "answer": "0",
+      "explanation": "An alert requires investigation.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What does DNS resolve?",
+      "options": [
+        "Domain names",
+        "File hashes"
+      ],
+      "answer": "0",
+      "explanation": "DNS resolves names to addresses.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What is PCAP?",
+      "options": [
+        "Packet capture file",
+        "Password database"
+      ],
+      "answer": "0",
+      "explanation": "PCAP stores captured network packets.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What does SHA-256 provide?",
+      "options": [
+        "Encryption",
+        "A fingerprint for integrity checks"
+      ],
+      "answer": "1",
+      "explanation": "Hashes help verify integrity.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What is a false positive?",
+      "options": [
+        "A benign event incorrectly flagged",
+        "A confirmed incident"
+      ],
+      "answer": "0",
+      "explanation": "False positives are benign events flagged incorrectly.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What is phishing?",
+      "options": [
+        "Deceptive communication",
+        "Routine backup"
+      ],
+      "answer": "0",
+      "explanation": "Phishing uses deceptive communication.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What is a log?",
+      "options": [
+        "A recorded event",
+        "A network cable"
+      ],
+      "answer": "0",
+      "explanation": "Logs record events.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "room": 1,
+      "title": "What does AND require?",
+      "options": [
+        "Both conditions",
+        "Either condition"
+      ],
+      "answer": "0",
+      "explanation": "AND requires both conditions.",
+      "points": 0,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:2:11",
+      "room": 2,
+      "title": "Is this email phishing?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "points": 10,
+      "kind": "choice",
+      "email": {
+        "sender": "IT Support <notice@account-review.example>",
+        "subject": "Account review",
+        "body": "Your account needs urgent verification.",
+        "detail": "Displayed link: company.example; destination: account-review.example"
+      }
+    },
+    {
+      "id": "v3:2:12",
+      "room": 2,
+      "title": "Which indicators are present? Select all that apply.",
+      "options": [
+        "Unexpected external sender domain",
+        "Displayed link differs from destination",
+        "Urgent or unexpected request",
+        "No suspicious indicators in this context",
+        "Unexpected attachment"
+      ],
+      "points": 10,
+      "kind": "multi"
+    },
+    {
+      "id": "v3:2:13",
+      "room": 2,
+      "title": "Is this email phishing?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "points": 10,
+      "kind": "choice",
+      "email": {
+        "sender": "HR <hr@company.example>",
+        "subject": "Weekly meeting",
+        "body": "The weekly meeting is Tuesday in Room 4.",
+        "detail": "No links or attachments. Expected internal announcement."
+      }
+    },
+    {
+      "id": "v3:2:14",
+      "room": 2,
+      "title": "Which indicators are present? Select all that apply.",
+      "options": [
+        "Unexpected external sender domain",
+        "Displayed link differs from destination",
+        "Urgent or unexpected request",
+        "No suspicious indicators in this context",
+        "Unexpected attachment"
+      ],
+      "points": 10,
+      "kind": "multi"
+    },
+    {
+      "id": "v3:2:15",
+      "room": 2,
+      "title": "Is this email phishing?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "points": 10,
+      "kind": "choice",
+      "email": {
+        "sender": "Finance <billing@invoice-review.example>",
+        "subject": "Unexpected invoice",
+        "body": "Please review an unexpected invoice immediately.",
+        "detail": "Attachment: invoice_notice.txt (inert training text)."
+      }
+    },
+    {
+      "id": "v3:2:16",
+      "room": 2,
+      "title": "Which indicators are present? Select all that apply.",
+      "options": [
+        "Unexpected external sender domain",
+        "Displayed link differs from destination",
+        "Urgent or unexpected request",
+        "No suspicious indicators in this context",
+        "Unexpected attachment"
+      ],
+      "points": 10,
+      "kind": "multi"
+    },
+    {
+      "id": "v3:2:17",
+      "room": 2,
+      "title": "Is this email phishing?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "points": 10,
+      "kind": "choice",
+      "email": {
+        "sender": "Security <security@company.example>",
+        "subject": "Security awareness",
+        "body": "Reminder: report suspicious messages through the internal help desk.",
+        "detail": "No links or attachments. Expected internal announcement."
+      }
+    },
+    {
+      "id": "v3:2:18",
+      "room": 2,
+      "title": "Which indicators are present? Select all that apply.",
+      "options": [
+        "Unexpected external sender domain",
+        "Displayed link differs from destination",
+        "Urgent or unexpected request",
+        "No suspicious indicators in this context",
+        "Unexpected attachment"
+      ],
+      "points": 10,
+      "kind": "multi"
+    },
+    {
+      "id": "v3:2:19",
+      "room": 2,
+      "title": "Is this email phishing?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "points": 10,
+      "kind": "choice",
+      "email": {
+        "sender": "Help Desk <help@company-support.example>",
+        "subject": "Mailbox warning",
+        "body": "Your mailbox will be suspended unless you act now.",
+        "detail": "Displayed link: company.example; destination: company-support.example"
+      }
+    },
+    {
+      "id": "v3:2:20",
+      "room": 2,
+      "title": "Which indicators are present? Select all that apply.",
+      "options": [
+        "Unexpected external sender domain",
+        "Displayed link differs from destination",
+        "Urgent or unexpected request",
+        "No suspicious indicators in this context",
+        "Unexpected attachment"
+      ],
+      "points": 10,
+      "kind": "multi"
+    },
+    {
+      "id": "v3:3:21",
+      "room": 3,
+      "title": "How many packets are in case.pcap?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:3:22",
+      "room": 3,
+      "title": "What source IP queried review.example?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:3:23",
+      "room": 3,
+      "title": "What is the DNS destination IP?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:3:24",
+      "room": 3,
+      "title": "How many queries target review.example?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:3:25",
+      "room": 3,
+      "title": "What transport protocol carries the DNS queries?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:4:26",
+      "room": 4,
+      "title": "Which user has failed logins in auth.log?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:4:27",
+      "room": 4,
+      "title": "How many failed login records exist?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:4:28",
+      "room": 4,
+      "title": "Which workstation has a review event?",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:4:29",
+      "room": 4,
+      "title": "Decode encoded.txt using Base64.",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:4:30",
+      "room": 4,
+      "title": "Calculate SHA-256 of note.txt.",
+      "options": [],
+      "points": 50,
+      "kind": "typed"
+    },
+    {
+      "id": "v3:5:31",
+      "room": 5,
+      "title": "Build a rule matching all failed login events.",
+      "options": [],
+      "points": 100,
+      "kind": "rule"
+    },
+    {
+      "id": "v3:5:32",
+      "room": 5,
+      "title": "Build a rule matching successful login events.",
+      "options": [],
+      "points": 100,
+      "kind": "rule"
+    },
+    {
+      "id": "v3:5:33",
+      "room": 5,
+      "title": "Build a rule matching failed login events for sam only.",
+      "options": [],
+      "points": 100,
+      "kind": "rule"
+    },
+    {
+      "id": "v3:6:34",
+      "room": 6,
+      "title": "What does SOC do?",
+      "options": [
+        "Design logos",
+        "Monitor and respond to security events"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:35",
+      "room": 6,
+      "title": "What is a SIEM?",
+      "options": [
+        "A system for collecting and analyzing logs",
+        "A file format"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:36",
+      "room": 6,
+      "title": "What is an alert?",
+      "options": [
+        "Proof of compromise",
+        "A signal requiring review"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:37",
+      "room": 6,
+      "title": "What does DNS resolve?",
+      "options": [
+        "File hashes",
+        "Domain names"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:38",
+      "room": 6,
+      "title": "What is PCAP?",
+      "options": [
+        "Password database",
+        "Packet capture file"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:39",
+      "room": 6,
+      "title": "What does SHA-256 provide?",
+      "options": [
+        "A fingerprint for integrity checks",
+        "Encryption"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:40",
+      "room": 6,
+      "title": "What is a false positive?",
+      "options": [
+        "A confirmed incident",
+        "A benign event incorrectly flagged"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:41",
+      "room": 6,
+      "title": "What is phishing?",
+      "options": [
+        "Routine backup",
+        "Deceptive communication"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:42",
+      "room": 6,
+      "title": "What is a log?",
+      "options": [
+        "A network cable",
+        "A recorded event"
+      ],
+      "points": 10,
+      "kind": "choice"
+    },
+    {
+      "id": "v3:6:43",
+      "room": 6,
+      "title": "What does AND require?",
+      "options": [
+        "Either condition",
+        "Both conditions"
+      ],
+      "points": 10,
+      "kind": "choice"
+    }
+  ],
+  "logs": [
+    {
+      "user": "alex",
+      "event": "Login",
+      "status": "Success"
+    },
+    {
+      "user": "sam",
+      "event": "Login",
+      "status": "Failed"
+    },
+    {
+      "user": "system",
+      "event": "Backup",
+      "status": "Success"
+    },
+    {
+      "user": "sam",
+      "event": "Login",
+      "status": "Failed"
+    },
+    {
+      "user": "lee",
+      "event": "Login",
+      "status": "Failed"
+    },
+    {
+      "user": "sam",
+      "event": "Login",
+      "status": "Success"
+    }
+  ]
+}
